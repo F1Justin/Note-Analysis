@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.23)  26 NOV 2022 16:06
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.23)  26 NOV 2022 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -796,20 +796,14 @@ Package fontspec Info: Font family 'SongtiSCLight(1)' created for font 'Songti
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 [12] (./语文分析.aux)
-
-Package rerunfilecheck Warning: File `语文分析.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `语文分析.out':
-(rerunfilecheck)             Before: 2085412DEAB5B001A22E61D47ECFFFE3;3312
-(rerunfilecheck)             After:  6DFF7871ADECE8466FD7F6CA5B9ACB25;3307.
+Package rerunfilecheck Info: File `语文分析.out' has not changed.
+(rerunfilecheck)             Checksum: 6DFF7871ADECE8466FD7F6CA5B9ACB25;3307.
  ) 
 Here is how much of TeX's memory you used:
- 26313 strings out of 475856
- 615525 string characters out of 5801792
- 900929 words of memory out of 5000000
- 46932 multiletter control sequences out of 15000+600000
+ 26307 strings out of 475856
+ 615129 string characters out of 5801792
+ 900924 words of memory out of 5000000
+ 46926 multiletter control sequences out of 15000+600000
  475427 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  100i,6n,104p,2539b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
