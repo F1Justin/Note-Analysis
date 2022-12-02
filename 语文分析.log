@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.23)  1 DEC 2022 21:57
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.23)  2 DEC 2022 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,20 +792,25 @@ Package fontspec Info: Font family 'SongtiSCLight(1)' created for font 'Songti
 (fontspec)             Light/BI/OT:language=dflt;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-[4] [5] [6] [7] [8] [9] [10] [11] [12]
+[4] [5] [6] [7] [8] [9] [10] [11]
+Overfull \hbox (1.47284pt too wide) in paragraph at lines 216--218
+[]\TU/LXGWWenKaiMono(0)/m/n/12.045 老 太 太 首 先\TU/lmtt/m/n/12.045 " \TU/LXGWWenKaiMono(0)/m/n/12.045 拾\TU/lmtt/m/n/12.045 " \TU/LXGWWenKaiMono(0)/m/n/12.045 炊 具\TU/lmtt/m/n/12.045 ," \TU/LXGWWenKaiMono(0)/m/n/12.045 捋\TU/lmtt/m/n/12.045 " \TU/LXGWWenKaiMono(0)/m/n/12.045 衣 袖\TU/lmtt/m/n/12.045 ," \TU/LXGWWenKaiMono(0)/m/n/12.045 抽\TU/lmtt/m/n/12.045 " \TU/LXGWWenKaiMono(0)/m/n/12.045 起 来\TU/lmtt/m/n/12.045 , \TU/LXGWWenKaiMono(0)/m/n/12.045 后\TU/lmtt/m/n/12.045 " \TU/LXGWWenKaiMono(0)/m/n/12.045 心 理 麻 幽 幽 的\TU/lmtt/m/n/12.045 ", \TU/LXGWWenKaiMono(0)/m/n/12.045 并\TU/lmtt/m/n/12.045 " \TU/LXGWWenKaiMono(0)/m/n/12.045 撒\TU/lmtt/m/n/12.045 ","
+ []
+
+[12]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
-[13] (./语文分析.aux)
+[13] [14] (./语文分析.aux)
 Package rerunfilecheck Info: File `语文分析.out' has not changed.
 (rerunfilecheck)             Checksum: FC882F8D8BA26488A56289215BC31D9D;3553.
  ) 
 Here is how much of TeX's memory you used:
- 26328 strings out of 475856
- 616829 string characters out of 5801792
- 901181 words of memory out of 5000000
- 46952 multiletter control sequences out of 15000+600000
+ 26352 strings out of 475856
+ 618549 string characters out of 5801792
+ 904866 words of memory out of 5000000
+ 46976 multiletter control sequences out of 15000+600000
  475387 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  100i,6n,104p,2525b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 语文分析.pdf (13 pages).
+Output written on 语文分析.pdf (14 pages).

@@ -18,10 +18,12 @@
 \contentsline {section}{\numberline {第3节}结构,思想,评价与概括}{9}{section.3}%
 \contentsline {subsection}{\numberline {3.1}『构思』``请从构思角度赏析''}{9}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}例题}{9}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}『判词』人物传记特色评价词}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}例题}{9}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}『判词』人物传记特色评价词}{11}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}『事迹』``请概括人物事迹''}{11}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}『思情』``请分析全文的思想情感''}{11}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}『情变』``作者情感态度是怎么转变的?''}{11}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}例题}{11}{subsubsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.6}『意蕴』``请品读加点词并体会其中意蕴''}{13}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}例题}{13}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}例题}{12}{subsubsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.6}『意蕴』``请品读加点词并体会其中意蕴''}{14}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}例题}{14}{subsubsection.3.6.1}%
