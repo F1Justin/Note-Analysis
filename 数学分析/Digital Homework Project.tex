@@ -11,8 +11,12 @@
 \usepackage{ifthen}
 \usepackage{yhmath}
 \usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\usepackage{unicode-math}
 \usepackage[fontsize=8pt]{fontsize}
 \setCJKmonofont{LXGW WenKai Mono}
+\setmathfont{XITS Math}
 
 \graphicspath{{./pic/}}
 
@@ -26,6 +30,7 @@
 
 \setlength{\headsep}{1.6cm}             %把正文下移,不会再碰到header
 \linespread{1.5}                        %设置行距
+
 
 \renewcommand{\headrulewidth}{2pt}      % 分隔线宽度0磅
 \newcommand{\1}{\underline{\makebox[1cm]{}}}
@@ -302,8 +307,36 @@
 \newpage
 \part{集合与不等式}
 
-\section{$a \in \mathbb{R}, f(x)= \log{2}{(\dfrac{1}{x}+a)}$. \\(1) }
+\section{
+    已知$a \in \mathbb{R}$, 函数$f(x)= \log_2{(\frac{1}{x}+a)}$. 
+\\(1) 若$a = 5$, 解 $f(x) \geq 0$;
+\\(2) 若$f(x) - \log_2{((a-4)x +2a -5)} = 0$的解集中仅有一个元素,求$a$的取值范围;
+\\(3) 设$a > 0$,若对任意$t \in [\frac{1}{2}, 1]$, 函数$f(x)$在$[t, t + 1]$上的最大值与最小值的差不超过1, 求$a$的取值范围.
+}
+\begin{enumerate}[(1)]
+    \item \lge{因为$\log{2}{(\frac{1}{x}+a)} \geq 0$, 所以$x \in (- \infty, -\frac{1}{x}) $.}
+    \item \lge{由$\log_2{(\frac{1}{x}+a)} = \log_2{((a - 4)x + 2a - 5)}$, 变形得$(a-4)x^2 + (a-5)x - 1 = 0$(式1), 且$\frac{1}{x} + a \geq 0$.
+        \\若$ a = 4 $, 则$ x = -1$,符合题意;
+        \\ $\Delta = a^2 - 6a + 9$ , 解得若$\Delta = 0$,则$a = 3$; 若$\Delta > 0$,则$a \neq 3$; 若$\Delta < 0$,则 $a \in \emptyset$;
+        \\若$a = 3$, 则$x = -1$,符合题意;
+        \\若$a \notin \{3, 4\}$, 由求根公式得$x_1 = -1, x_2 = \frac{1}{a-4}$;
+        \\若$x = -1$是解, 代入到式1中得$\begin{cases} -1 + a > 0 \\ 2a - 4 \leq 0\end{cases}$,解得$a \in (1, 2]$;
+        \\若$x = \frac{1}{a-4}$是解, 代入到式1中得$\begin{cases} 2a - 4 > 0 \\ -1 + a \leq0\end{cases}$,解得$a \in \emptyset$;
+        \\综上, $a \in (1, 2]\cup \{3,4\}$.
+    }
+    \item \lge{
+        由复合函数单调性的性质可知$f(x)$在$\mathbb{D}$上单调减.
+        \\由$f(t)-f(t+1) \leq 1$可得$\log_2{\frac{\frac{1}{t}+a}{\frac{1}{t+1}+a}} \leq 1$;
+        \\进一步化简可得$\frac{1}{t} + a \leq 2(\frac{1}{t+1}+a)$,得$\frac{1 - t}{t(t+1)} \leq a$;
+        \\令$r = t -1$, 则$r \in [0, ]$; 原式化为$\frac{r}{r^2 - 3r + 2} \leq a$;
+        \\若$r = 0$, $a \geq 0$;
+        \\若$r \in (0, \frac{1}{2}]$, 原式继续化为$\frac{1}{r+\frac{1}{r}-3 \leq a}$, 由基本不等式解得$a \geq $.
+        \\综上, $a \in [\frac{2}{3}, +\infty]$.
+    }
+    
+            
 
+    \end{enumerate}
 
 
 
