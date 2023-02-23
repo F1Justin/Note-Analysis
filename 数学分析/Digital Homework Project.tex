@@ -358,7 +358,25 @@
 \part{三角,复数与向量}
 
 \section{三角形$ABC$的外心为$O$, 三个内角$A, B, C$所对的边分别为$a, b, c$, $ \xl{AO} \cdot \xl{BC} = \frac{1}{2}a(a-\frac{8}{5}c), b = 4$,则三角形$ABC$面积的最大值为\2.}
-\lge{由外心的性质可知, $\xl{AO} \cdot \xl{BC} = \xl{AO}(\xl{AC}-\xl{AB}) = \xl{AO} \cdot \xl{AC} - \xl{AO} \cdot \xl{AB} = \frac{1}{2}|\xl{AC}|^2 - \frac{1}{2}|\xl{AB}|^2 = \frac{1}{2}b^2 - \frac{1}{2}c^2$.}
+\lge{由外心的性质可知, $\xl{AO} \cdot \xl{BC} = \xl{AO}(\xl{AC}-\xl{AB}) = \xl{AO} \cdot \xl{AC} - \xl{AO} \cdot \xl{AB} = \frac{1}{2}|\xl{AC}|^2 - \frac{1}{2}|\xl{AB}|^2 = \frac{1}{2}b^2 - \frac{1}{2}c^2$, 于是$
+\frac{1}{2}b^2 - \frac{1}{2}c^2 = \frac{1}{2}a^2 - \frac{4}{5}ac$}
+
+\section{水域养殖水产, $AO, BO$为直线岸线, $OA = 1000$m, $OB = 1500$m, $\angle{AOB} = \frac{\pi}{3}$水域边界为某园的一段弧$\wideparen{AB}$, 过$\wideparen{AB}$上一点按线段$PA$和$PB$修养殖网箱,知$\angle{APB} = \frac{2\pi}{3}$.
+\\(1) 求岸线上$A$与$B$之间的距离;
+\\(2) 若$PA$上每米40元利润,$PB$上每米30元利润,记$\angle{PAB} = \theta$, 则两段最大经济收益是?(精确到元).
+}
+
+\begin{minipage}[b]{0.72\linewidth}
+    \begin{enumerate}[(1)]
+        \item \lge{由余弦定理得$|AB| = 500\sqrt{7}$m.}
+        \item \lge{由正弦定理得$\frac{PA}{\sin\theta} = \frac{PA}{\sin(\frac{\pi}{3}-\theta)} = \frac{500\sqrt{7}}{\sin\frac{2\pi}{3}}$, 设$\frac{500\sqrt{7}}{\sin\frac{2\pi}{3}} = c$,则$PA = c \sin(\frac{\pi}{3}-\theta)$, $PB = \sin\theta$, 利润为$40c\sin(\frac{\pi}{3}-\theta) + 30c\sin\theta$, 化简可得$10c(2\sqrt{3}\cos\theta + \sin\theta)$, 使用辅助角公式可得$10\sqrt{13}c\sin(\theta + \arctan 2\sqrt{3})$, 求得最大值为16166元.}
+    \end{enumerate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.18\linewidth}
+    \includegraphics[height=5.5\baselineskip]{1.png}
+\end{minipage}
+
 
 
 \end{document}
