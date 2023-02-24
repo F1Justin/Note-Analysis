@@ -361,21 +361,51 @@
 \lge{由外心的性质可知, $\xl{AO} \cdot \xl{BC} = \xl{AO}(\xl{AC}-\xl{AB}) = \xl{AO} \cdot \xl{AC} - \xl{AO} \cdot \xl{AB} = \frac{1}{2}|\xl{AC}|^2 - \frac{1}{2}|\xl{AB}|^2 = \frac{1}{2}b^2 - \frac{1}{2}c^2$, 于是$
 \frac{1}{2}b^2 - \frac{1}{2}c^2 = \frac{1}{2}a^2 - \frac{4}{5}ac$}
 
-\section{水域养殖水产, $AO, BO$为直线岸线, $OA = 1000$m, $OB = 1500$m, $\angle{AOB} = \frac{\pi}{3}$水域边界为某园的一段弧$\wideparen{AB}$, 过$\wideparen{AB}$上一点按线段$PA$和$PB$修养殖网箱,知$\angle{APB} = \frac{2\pi}{3}$.
+\section{水域养殖水产, $AO, BO$为直线岸线, $OA = 1000$m, $OB = 1500$m, $\angle{AOB} = \frac{\pi}{3}$水域边界为某圆的一段弧$\wideparen{AB}$, 过$\wideparen{AB}$上一点按线段$PA$和$PB$修养殖网箱,知$\angle{APB} = \frac{2\pi}{3}$.
 \\(1) 求岸线上$A$与$B$之间的距离;
 \\(2) 若$PA$上每米40元利润,$PB$上每米30元利润,记$\angle{PAB} = \theta$, 则两段最大经济收益是?(精确到元).
 }
 
-\begin{minipage}[b]{0.72\linewidth}
+\begin{minipage}[b]{0.65\linewidth}
+    \hfill
     \begin{enumerate}[(1)]
         \item \lge{由余弦定理得$|AB| = 500\sqrt{7}$m.}
         \item \lge{由正弦定理得$\frac{PA}{\sin\theta} = \frac{PA}{\sin(\frac{\pi}{3}-\theta)} = \frac{500\sqrt{7}}{\sin\frac{2\pi}{3}}$, 设$\frac{500\sqrt{7}}{\sin\frac{2\pi}{3}} = c$,则$PA = c \sin(\frac{\pi}{3}-\theta)$, $PB = \sin\theta$, 利润为$40c\sin(\frac{\pi}{3}-\theta) + 30c\sin\theta$, 化简可得$10c(2\sqrt{3}\cos\theta + \sin\theta)$, 使用辅助角公式可得$10\sqrt{13}c\sin(\theta + \arctan 2\sqrt{3})$, 求得最大值为16166元.}
     \end{enumerate}
     \end{minipage}
     \hfill
-    \begin{minipage}[b]{0.18\linewidth}
-    \includegraphics[height=5.5\baselineskip]{1.png}
+    \begin{minipage}[b]{0.25\linewidth}
+    \includegraphics[height=85pt]{1.png}
 \end{minipage}
+
+
+\part{圆锥曲线}
+
+\section{已知$l_1: y = x, l_2: y = -x$,动点$M(x, y)$,且$|x| > |y|$,记$M$到$l_1, l_2$的距离分别为$d_1, d_2$,满足$d_1 \cdot d_2 = \frac{a^2}{2}(a > 0)$.
+\\(1) 动点$M$的轨迹$\Gamma$的方程;
+\\(2) 若直线的方向向量为$(1, 2)$,过$(\sqrt{2}a, 0)$的直线$l$与$\Gamma$交于$A, B$两点,那么以$AB$为直径的圆是否恰过原点$O$?若是,求$a$的值;若否,判断原点在圆内还是圆外,说明理由.
+\\(3) 过原点$O$作斜率$k$为的直线交于$M$,$N$两点,设$P(0, 1)$,求$\triangle PMN$的面积$S$关于$k$的函数解析式,并求$S$的取值范围.
+}
+ 
+\begin{minipage}[b]{0.65\linewidth}
+    \begin{enumerate}[(1)]
+        \item \lge{由点到直线距离公式可得$d_1 = \frac{|x - 4|}{\sqrt{2}}, d_2 = \frac{|x + 4|}{\sqrt{2}}$, 代入$d_1 \cdot d_2 = \frac{a^2}{2}$中得$x^2 + y^2 = 1$.}
+        \item \lge{设$l$的方程为$y = 2(2 - \sqrt{2}a)$,与$\Gamma$联立化简得$-3x^2 +8\sqrt{2}ax - 9a^2 = 0$, 由于$AB$是圆的直径,且$O$在圆上,所以设
+        $\xl{OA} = (x_1, y_1), \xl{OB} = (x_2, y_2)$, $\xl{OA} \cdot \xl{OB} = 0$, 故$x_1x_2 + y_1y_2 = 0$. 由韦达定理得$x_1 + x_2 = \frac{8\sqrt{2}}{3}a$
+        , $x_1x_2 = 3a^2$, $y_1y_2 = 4x_1x_2 - \sqrt{2}a(x_1 + x_2) + 2a^2$.于是得到$x_1x_2 + y_1y_2 = \frac{35}{3}a^2 = 0$,而$a = 0$与题意不符,故原点不在圆上.
+        又$\xl{OA} \cdot \xl{OB} > 0$,故$<\xl{OA}, \xl{OB}> < \frac{\pi}{2}$.原点在圆外.}
+        \item \lge{设$M(x_m, y_m), N(x_n, y_n)$,则$S_{\triangle PMN}  = \frac{1}{2} \cdot 1 \cdot |x_m| + \frac{1}{2} \cdot 1 \cdot |x_n| = \frac{1}{2}|x_m - x_n|$.
+         设直线$y = kx + b$,与$\Gamma$联立得$(1 - k^2)x^2 - a = 0$, 又由韦达定理得$\frac{1}{2}|x_m - x_n| = \frac{1}{2}\sqrt{(x_m + x_n)^2 - 4x_mx_n} = \frac{a\sqrt{1-k^2}}{1-k^2}$,$k \in (-1, 1)$, $S \in [a, +\infty]$.}
+    \end{enumerate}
+\end{minipage}
+\begin{minipage}[b]{0.25\linewidth}
+    \centering
+    \includegraphics[height = 95pt]{2.png}
+    \hfill
+    \includegraphics[height = 100pt]{3.png}
+\end{minipage}
+
+
 
 
 
