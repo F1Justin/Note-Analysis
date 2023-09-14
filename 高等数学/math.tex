@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
+
+\title{{\Huge{\textbf{高等数学}}}\\笔记}
+\author{F1}
+\date{\today}
+\linespread{1.5}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{example}[theorem]{例}
+\newtheorem{proposition}[theorem]{命题}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+%\begin{center}
+%    \Huge\textbf{前言}
+%\end{center}~\
+
+%这是笔记的前言部分. 
+%~\\
+%\begin{flushright}
+%    \begin{tabular}{c}
+%        Dylaaan\\
+%        \today
+%    \end{tabular}
+%\end{flushright}
+
+%\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\chapter{章节标题}
+
+在这里可以输入笔记的内容. 
+
+\section{数列的极限}
+
+\subsection{数列极限的定义}
+\begin{example}
+    已知$x_n = \frac{n + (-1)^n}{n}$, 求$\lim\limits_{n \to \infty}x_n = 1$.\\
+    解: $\forall \epsilon > 0$给定, 要寻找$N$, 使当$n > N$时, $|x_n - 1| < \epsilon$.\\
+    $|x_n - 1| = |\frac{n + (-1)^n}{n} - 1| = \frac{1}{n}$,\\
+    由于$\frac{1}{n} < \epsilon$, 所以$n > \frac{1}{\epsilon}$, 取$N = \frac{1}{\epsilon}$, 则当$n > N$时, $|x_n - 1| < \epsilon$.\\
+    所以$\lim\limits_{n \to \infty}x_n = 1$.
+\end{example}
+
+\begin{example}
+    s
+\end{example}
+
+\subsection{收敛数列的性质}
+\begin{enumerate}
+    \item 极限唯一性: 若$\lim\limits_{n \to \infty}x_n = A$, 则$A$唯一.
+    \item 收敛数列必有界
+    \item 收敛数列的保号性: 若$\lim\limits_{n \to \infty}x_n = A > 0$, 则$\exists N$, 当$n > N$时, $x_n > 0$.
+    \item 收敛数列的
+\end{enumerate}
+
+
+
+
+\end{document}
