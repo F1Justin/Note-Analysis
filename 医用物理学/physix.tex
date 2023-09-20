@@ -1,5 +1,5 @@
 \documentclass[12pt, a4paper, oneside]{ctexbook}
-\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs, parskip}
 
 \title{{\Huge{\textbf{医用物理学}}}\\笔记}
 \author{F1}
@@ -40,15 +40,195 @@
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-\chapter{章节标题}
+\chapter{流体力学与血液流变学简介}
+流体：没有固定形状，具有流动特征的物质.
 
-在这里可以输入笔记的内容. 
+\section{流体运动的描述}
+\subsection{描述流体运动的方法}
+\begin{itemize}
+    \item 拉格朗日法：跟踪流体中的一点，描述其运动
+    \item 欧拉法
+\end{itemize}   
 
-\section{小节标题}
+\subsection{速度场与定常流动}
+\begin{itemize}
+    \item 速度场：流体中每一点的速度，$v = (x, y, z, t)$
+    \item 定常流动：速度场不随时间变化，$v = (x, y, z)$
+\end{itemize}
 
-这是笔记的正文部分. 
-\subsection{test}
-aaaa
-320582200501218511
+\subsection{流线与流管}
+\begin{itemize}
+    \item 流线：流体运动方向的切线
+    \item 流管：流线的集合（流线不会相交）
+\end{itemize}
+
+\section{理想流体与连续性方程}
+\subsection{理想流体}
+理想流体：无黏滞性，不可压缩。
+\subsection{连续性方程}
+理想流体作定常流动时，流管形状不变，且流管内流体不可压缩，故在任意时间间隔$\Delta t$内流经$S_1$与$S_2$的流体体积相等，即
+\begin{align*}
+    S_1v_1\Delta t = S_2v_2\Delta t \\
+    S_1v_1 = S_2v_2 = Constant
+\end{align*}
+
+\section{伯努利方程}
+\subsection{理想流体的伯努利方程}
+\begin{equation*}
+    \frac{1}{2} \rho v^2 + \rho gh + p = Constant
+\end{equation*}
+\subsection{伯努利方程的应用}
+\subsubsection{水平管中压强与流速的关系}
+对于水平管，伯努利方程简化为
+\begin{equation*}
+    \frac{1}{2} \rho v^2 + p = Constant
+\end{equation*}
+因此，压强与流速成反比。
+文丘里流量计：对于水中1和2两截面处，有
+\begin{align*}
+    \frac{1}{2} \rho v_1^2 + p_1 &= \frac{1}{2} \rho v_2^2 + p_2 \\
+    v_1S_1 &= v_2S_2
+\end{align*}
+联立上式得截面1处的流速为
+\begin{equation*}
+    v_1 = S_2 \sqrt{\frac{2(p_1 - p_2)}{\rho(S_1^2 - S_2^2)}}
+\end{equation*}
+又因为$p_1 - p_2 = \rho gh$，故管中流量为
+\begin{equation*}
+    Q = v_1S_1 = S_1 S_2 \sqrt{\frac{2\rho g h}{S_1^2 - S_2^2}}
+\end{equation*}
+
+\section{黏滞流体的运动}
+
+\subsection{黏滞流体的伯努利方程}
+流体克服黏滞力做功，机械能不断损失并转化为热能，故伯努利方程变为
+\begin{equation*}
+    \frac{1}{2} \rho v^2 + \rho gh + p = Constant - \frac{1}{2} \rho v^2_{\text{损}}
+\end{equation*}
+若流体在水平均匀管道中作定常流动
+\begin{align*}
+    \because h_1 = h_2,  v_1 = v_2 \\
+    \therefore p_1 = p_2 + \Delta E, p_1 > p_2
+\end{align*}
+若流体在开放的等粗管道中作定常流动
+\begin{align*}
+    \because p_1 = p_2 = p_0,  v_1 = v_2 \\
+    \therefore \rho gh_1 -\rho gh_2 =  \Delta E
+\end{align*}
+
+\section{物体在流体中的运动}
+\subsection{物体在理想流体中的运动}
+设$h_1 = h_2$，由伯努利方程得
+\begin{equation*}
+    \frac{1}{2} \rho v_1^2 + p_1 = \frac{1}{2} \rho v_2^2 + p_2
+\end{equation*}
+升力：物体获得相对流速方向垂直（横向）且向流速增大一侧的动力。
+
+\subsection{物体在黏滞流体中的运动与斯托克斯定律}
+图示小球所受力
+\begin{align*}
+    G = \frac{4}{3}\pi r^3 \rho_1 g, f_浮 = \frac{4}{3}\pi r^3 \rho_2 g
+\end{align*}
+固体在黏滞流体中作匀速运动还会受到黏滞阻力，若物体运动速度很小，则
+\begin{align*}
+    f_阻 = 6\pi r \eta v
+\end{align*}
+沉降速度（终极速度）：
+\begin{align}
+    v_s = \frac{2(\rho_1 - \rho_2)}{9\eta}gr^2
+\end{align}
+用此公式可求得
+\begin{itemize}
+    \item 液体黏滞系数
+    \item 球体半径
+\end{itemize}
+
+
+\section*{本章小结}
+\begin{itemize}
+    \item 连续性方程：流量$Q = Sv$， 连续性方程$Sv = Constant$
+    \item 理想流体的伯努利方程：$\frac{1}{2} \rho v^2 + \rho gh + p = Constant$\\适用条件：\textbf{理想流体，定常流动，同一流管}\\伯努利方程应用说明：
+    \begin{itemize}
+        \item 正确地选取截面, 包含所求量
+        \item 方程正确简化:对于\textbf{等粗管道}，$p_1 + \rho g h_1 = p_2 + \rho g h_2$；对于\textbf{水平管道}，$p_1 + \frac{1}{2}\rho v_1^2 = p_2 + \frac{1}{2}\rho v_2^2$
+        \item 找出隐条件: 大管小孔, 大处$v$不计; 与空气接触, $p  = p_0$
+    \end{itemize}
+    \item 牛顿黏滞定律：$F = - \eta \Delta S \frac{\mathrm{d}v}{\mathrm{d}x}$，其中$\eta$为黏滞系数，单位为$Pa \cdot s$\\
+    说明：\begin{enumerate}
+        \item 黏度取决于流体性质
+        \item 液体的黏度大于气体
+        \item 与温度的关系：对液体$t\uparrow \eta \downarrow$，对气体$t\uparrow \eta \uparrow$
+    \end{enumerate}
+    \item 层流与湍流：\\雷诺数：$R_e = \frac{\rho v r}{\eta}$，$R_e > 1500$作湍流，$R_e < 1000$作层流，$1000 < R_e < 1500$不稳定，会互相转变
+    \item 泊肃叶定律：$Q = \dfrac{\pi r^4 \Delta p}{8\eta l}$，其中$\Delta p$为压差，$l$为管长
+    \item 黏滞流体的伯努利方程：$p_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1 = p_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2 + \Delta{E}$
+    \item 斯托克斯定律：$f = 6\pi \eta v r$\\可推导出沉降速度：$v_s = \frac{2(\rho_1 - \rho_2)}{9\eta}gr^2$
+\end{itemize}
+
+
+
+\chapter{震动与波、声波、超声波}
+研究对象：物体的周期性运动及其运动规律。\\
+振动：周期性运动；波动：振动的传播。
+\section{简谐运动}
+\subsection{弹簧振子}
+机械振动的原因：物体所受回复力和物体所具有的惯性。
+回复力：始终指向平衡位置
+\subsection{描述简谐运动的物理量}
+\begin{itemize}
+    \item 振幅：$A$：振动的幅度
+    \item 角频率：$\omega = 2\pi f$：2$\pi$秒内往复振动的次数
+    \item 相位：$\varphi = \omega t + \varphi_0$：
+    \item 初相：$\varphi_0$：$t = 0$时刻的相位
+    \item 周期：$T = \frac{1}{\nu} = \frac{2\pi}{\omega}$：振动一次所用时间
+    \item 频率：$\nu = \frac{1}{T} = \frac{\omega}{2\pi}$：单位时间内振动的次数
+\end{itemize}
+\subsection{简谐运动的速度和加速度}
+简谐运动表达式
+\begin{align*}
+    x = A\cos(\omega t + \varphi)
+\end{align*}
+简谐运动的速度
+\begin{align*}
+    v = \frac{\mathrm{d}x}{\mathrm{d}t} = -A\omega\sin(\omega t + \varphi)
+\end{align*}
+简谐运动的加速度
+\begin{align*}
+    a = \frac{\mathrm{d}v}{\mathrm{d}t} = -A\omega^2\cos(\omega t + \varphi)
+\end{align*}
+而$v_m = \omega A$，$v_m$称为速度幅
+故简谐运动的加速度可表示为
+\begin{align*}
+    a = -\omega^2x
+\end{align*}
+对于弹簧系统，由牛顿第二定律
+\begin{align*}
+    F = ma = -m\omega^2x
+\end{align*}
+又胡克定律
+\begin{align*}
+    F = -kx
+\end{align*}
+
+\subsection{简谐运动的旋转矢量表示法}
+
+\subsection{简谐运动的能量}
+\begin{itemize}
+    \item 振子势能：$E_p = \frac{1}{2}kx^2 = \frac{1}{2}kA^2\cos^2{(\omega t + \varphi)}$
+    \item 振子动能：$E_k = \frac{1}{2}mv^2 = $
+\end{itemize}
+
+\section{简谐运动的合成}
+\subsection{两个同方向同频率的简谐运动合成}
+一个质点参与两个在同一直线上频率相同的简谐运动，其合运动仍为简谐运动，其振幅为两个简谐运动振幅的矢量和。
+\subsection{两个同方向不同频率的简谐运动合成}
+
+
+
+
+
+
+
+
 
 \end{document}
